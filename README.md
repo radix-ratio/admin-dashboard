@@ -36,4 +36,4 @@ This project is licensed under the MIT License. See [`LICENSE`](https://chooseal
 
 ## Authors
 
-- [Your GitHub Username](https://www.github.com/your-github-username)
+- [@radix-ratio](https://www.github.com/radix-ratio)
