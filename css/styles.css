@@ -1,0 +1,34 @@
+@import "reset.css";
+@import "modern-normalize.css";
+
+:root {
+    --clr-text: hsl(270, 20%, 6%);
+    --clr-background: hsl(300, 20%, 99%);
+    --clr-primary: hsl(275, 33%, 66%);
+    --clr-secondary: hsl(353, 19%, 73%);
+    --clr-accent: hsl(23, 19%, 37%);
+
+    --clr-success: hsl(143, 100%, 26%);
+    --clr-warning: hsl(43, 100%, 66%);
+    --clr-error: hsl(348, 55%, 49%);
+
+
+    --fs-100: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
+    --fs-200: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+    --fs-300: clamp(1rem, 0.8696rem + 0.6522vw, 1.375rem);
+    --fs-400: clamp(1.2rem, 1.0196rem + 0.9022vw, 1.7188rem);
+    --fs-500: clamp(1.44rem, 1.1936rem + 1.2321vw, 2.1484rem);
+    --fs-600: clamp(1.728rem, 1.3949rem + 1.6653vw, 2.6855rem);
+    --fs-700: clamp(2.0736rem, 1.6272rem + 2.2319vw, 3.3569rem);
+    --fs-800: clamp(2.4883rem, 1.8943rem + 2.9702vw, 4.1962rem);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --clr-text: hsl(270, 20%, 94%);
+        --clr-background: hsl(300, 20%, 1%);
+        --clr-primary: hsl(275, 33%, 34%);
+        --clr-secondary: hsl(353, 19%, 27%);
+        --clr-accent: hsl(22, 19%, 63%);
+    }
+}
