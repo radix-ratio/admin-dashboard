@@ -136,6 +136,7 @@ header {
     padding: 2rem;
 }
 
+/* search */
 .search {
     display: flex;
     align-items: space-around;
@@ -174,8 +175,6 @@ header {
     align-content: center;
 }
 
-
-
 .avatar {
     position: relative;
     display: flex;
@@ -205,4 +204,33 @@ header {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+/* user */
+.user {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-template-columns: auto  1fr;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.625rem 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: var(--fs-200);
+    background-color: var(--clr-primary);
+    color: var(--clr-body);
+    height: fit-content;
+}
+
+.user .avatar {
+    width: 6rem;
+    height: 6rem;
+}
+
+.user .avatar img{
+    width: 50%;
+    height: 50%;
 }
