@@ -32,3 +32,9 @@
         --clr-accent: hsl(22, 19%, 63%);
     }
 }
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
