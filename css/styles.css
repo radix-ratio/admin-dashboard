@@ -3,6 +3,7 @@
 
 :root {
     --clr-text: hsl(270, 20%, 6%);
+    --clr-body: hsl(300, 20%, 94%);
     --clr-background: hsl(300, 20%, 99%);
     --clr-primary: hsl(275, 33%, 66%);
     --clr-secondary: hsl(353, 19%, 73%);
@@ -33,8 +34,69 @@
     }
 }
 
+
+h1 {
+    font-size: var(--fs-600);
+    font-weight: bold;
+}
+
+h2 {
+    font-size: var(--fs-500);
+    font-weight: bold;
+}
+
+h3 {
+    font-size: var(--fs-400);
+    font-weight: bold;
+}
+
+h4 {
+    font-size: var(--fs-300);
+    font-weight: bold;
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(4, 1fr);
 }
+
+nav {
+    display: grid;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    max-height: var(--fs-700);
+}
+
+nav {
+    list-style-type: none;
+}
+
+nav img {
+    min-height: var(--fs-400);
+}
+
+.menu ul  li {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    font-size: var(--fs-300);
+    font-weight: 600;
+}
+
+aside {
+    display: grid;
+    grid-template-rows: auto auto 1fr; 
+    gap: 3rem;
+    padding: 2rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-body);
+}
+
 
