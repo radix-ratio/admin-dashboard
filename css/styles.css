@@ -7,8 +7,9 @@
     --clr-background: hsl(300, 20%, 99%);
     --clr-primary: hsl(275, 33%, 66%);
     --clr-secondary: hsl(353, 19%, 73%);
-    --clr-accent: hsl(23, 19%, 37%);
+    --clr-accent: hsl(23, 46%, 61%);
 
+    --clr-neutral-200: hsl(0, 0%, 79%);
     --clr-success: hsl(143, 100%, 26%);
     --clr-warning: hsl(43, 100%, 66%);
     --clr-error: hsl(348, 55%, 49%);
@@ -30,7 +31,7 @@
         --clr-background: hsl(300, 20%, 1%);
         --clr-primary: hsl(275, 33%, 34%);
         --clr-secondary: hsl(353, 19%, 27%);
-        --clr-accent: hsl(22, 19%, 63%);
+        --clr-accent: hsl(23, 49%, 62%);
     }
 }
 
@@ -61,6 +62,7 @@ body {
     grid-template-rows: repeat(4, 1fr);
 }
 
+/* aside menu */
 nav {
     display: grid;
 }
@@ -76,6 +78,11 @@ img {
 
 nav {
     list-style-type: none;
+}
+
+nav a {
+    color: var(--clr-body);
+    text-decoration: none;
 }
 
 nav img {
