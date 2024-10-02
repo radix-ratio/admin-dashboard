@@ -251,7 +251,7 @@ main > article{
 /* projects */
 .projects {
     grid-area: projects;
-    max-height: 50rem; 
+    max-height: 70rem; 
     overflow-y: auto;
 }
 
@@ -263,22 +263,6 @@ main > article{
     gap: 1rem;
     
 }   
-::-webkit-scrollbar {
-    width: 12px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
 
 .project{
     padding: 1rem;
@@ -307,6 +291,23 @@ main > article{
     color: var(--clr-accent);
     font-size: var(--fs-300);
     cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .card {
