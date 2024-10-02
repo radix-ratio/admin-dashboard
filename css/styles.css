@@ -15,9 +15,9 @@
     --clr-error: hsl(348, 55%, 49%);
 
     --clr-avatar-1: hsl(32 100% 82%);
-    --clr-avatar-2: hsl(32 100% 82%);
-    --clr-avatar-3: hsl(32 100% 82%);
-    --clr-avatar-4: hsl(32 100% 82%); 
+    --clr-avatar-2: hsl(182, 100%, 82%);
+    --clr-avatar-3: hsl(209, 100%, 82%);
+    --clr-avatar-4: hsl(4, 100%, 82%); 
 
 
     --fs-100: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
@@ -205,12 +205,6 @@ header {
     max-height: var(--fs-500);
 }
 
-.line {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 /* user */
 .user {
     display: grid;
@@ -231,14 +225,16 @@ header {
     cursor: pointer;
 }
 
-.user .avatar {
+.user .avatar,
+.trending-people .avatar {
     width: 6rem;
     height: 6rem;
 }
 
-.user .avatar img{
-    width: 50%;
-    height: 50%;
+.user .avatar img,
+.trending-people .avatar img {
+    width: 60%;
+    height: 60%;
 }
 
 main > article{
@@ -248,14 +244,9 @@ main > article{
     padding: 1rem;
     gap: 2rem;
     grid-template-areas: 
-    'projects notices ' 
-    'projects trending ';
-}
-
-
-.full-width {
-    grid-column: -1 / 1;
-    height: 1px;
+    'projects notices' 
+    'projects trending';
+    
 }
 
 /* projects */
@@ -266,7 +257,6 @@ main > article{
 .projects-grid {
     --min-column-size: 35ch;
     display: grid;
-    grid-row: 2 span ;
     grid-template-columns: 
     repeat(auto-fit, minmax(min(var(--min-column-size), 100%), 1fr));
     gap: 1rem;
@@ -327,6 +317,20 @@ main > article{
 .notice:last-child {
     border-bottom: none;
 }
+
+/* trending people */
 .trending {
     grid-area: trending;
+}
+
+.trending-people {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.person-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
 }
