@@ -15,7 +15,7 @@ This project is a basic implementation of an admin dashboard, demonstrating the 
 
 ## Demo
 
-[**Live Demo**](https://radix-ratio.github.io/admin-dashboard)  | [**Project Specs**](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard)
+[**Live Demo**](https://kacper-korzen.github.io/admin-dashboard)  | [**Project Specs**](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard)
 
 ## Screenshots
 
@@ -38,4 +38,4 @@ This project is licensed under the MIT License. See [`LICENSE`](https://chooseal
 
 ## Authors
 
-- [@radix-ratio](https://www.github.com/radix-ratio)
+- [@Kacper K](https://www.github.com/kacper-korzen)
